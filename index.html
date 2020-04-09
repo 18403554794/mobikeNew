@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobike</title>
+    <link rel="stylesheet" href="reset.min.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="mobike.css">
+</head>
+
+<body>
+    <!-- 头部 第一屏 -->
+    <div class="header-wrap">
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-8.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-7.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-4.jpg" alt="">
+                </div>
+                
+            </div>
+            
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <!-- logo -->
+        <div class="header-logo">
+            <div class="md-container">
+                <div class="logo" >
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="header-nav">
+                    <div class="txt ">
+                        <a  href="">产品</a>
+                    </div>
+                    <div class="txt">
+                        <a  href="">摩拜科技</a>
+                    </div>
+                    <div class="txt">
+                        <a  href="">关于</a>
+                    </div>
+                    <div class="txt">
+                        <a  href="">广告合作</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文字 -->
+        <div class="header-tit">
+            <div class="md-container">
+                <h1 class="logo-h1">让自行车回归城市</h1>
+                <div class="btn">
+                    <a class="btn-a" href="">立即开始使用mobike</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 广告 -->
+        <div class="header-news">
+            <div class="md-container">
+                <a href="">
+                    <span class="news">NEWS</span>
+                    <span>
+                        “摩拜公交” 小程序上线  线上购买地铁票省时省力
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第二屏 -->
+    <div class="heors">
+        <div class="heor-item " style="background: url(1.png);">
+            <a href="" class="heors-pic-1"></a>
+        </div>
+        <div class="heor-item " style="background: url(2.png);">
+
+        </div>
+        <div class="heor-item " style="background: url(3.png);">
+
+        </div>
+        <div class="heor-item " style="background: url(4.png);">
+
+        </div>
+    </div>
+
+    <div class="meta-links">
+        <div class="md-container">
+            <div class="meta-link" style="background: url(5.png);">
+                
+            </div>
+            <div class="meta-link" style="background: url(6.png);">
+                
+            </div>
+            <div class="meta-link" style="background: url(7.png);">
+                
+            </div>
+        </div>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            
+            loop: true, // 循环模式选项
+
+            
+            
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false, //true 停止
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            
+        })        
+    </script>
+</body>
+
+</html>
